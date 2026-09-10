@@ -1,6 +1,6 @@
 // BP log service worker: network first, cache fallback, so the app opens offline
 // and picks up updates whenever it's online. Bump CACHE to force a refresh.
-const CACHE = 'bplog-v1';
+const CACHE = 'bplog-v2';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 
 self.addEventListener('install', e => {

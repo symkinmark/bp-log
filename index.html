@@ -61,6 +61,7 @@ select{font:inherit;padding:8px 10px;border:1px solid var(--rule);border-radius:
 .btn.small{padding:6px 10px;font-size:14px}
 .btn.quiet{border-color:var(--rule);font-weight:500}
 .btn.danger{color:var(--red);border-color:var(--red)}
+.btn.big{display:block;width:100%;max-width:420px;padding:16px 20px;font-size:18px;text-align:center}
 .actions{display:flex;flex-wrap:wrap;gap:8px}
 
 /* fields */
@@ -269,7 +270,7 @@ table.log td.notes-cell{min-width:140px}
         <h3>Back up and restore</h3>
         <p>A backup file holds every week. Restoring one adds its weeks to what’s already here.</p>
         <div class="actions">
-          <button type="button" class="btn" id="downloadBackup">Download backup</button>
+          <button type="button" class="btn primary big" id="downloadBackup">Download backup</button>
           <button type="button" class="btn" id="restoreBtn">Restore backup</button>
           <input type="file" id="restoreFile" accept=".json,application/json" class="sr-only" tabindex="-1" aria-hidden="true">
         </div>
@@ -301,7 +302,7 @@ table.log td.notes-cell{min-width:140px}
 (function(){
 'use strict';
 
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0';
 const STORE_KEY = 'bplog.v1';
 const DAYS = 7;
 const READINGS = 3;
